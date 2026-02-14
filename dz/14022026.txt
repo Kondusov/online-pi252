@@ -1,0 +1,27 @@
+Прочесть весь раздел о Scrum.
+На оценку, устно ответить на вопросы по темам указанным ниже.
+
+https://agilemanifesto.org/iso/ru/manifesto.html
+https://www.atlassian.com/ru/agile/scrum
+https://www.atlassian.com/ru/agile/scrum/sprints
+https://www.atlassian.com/ru/agile/scrum/sprint-planning
+
+
+Что такое Scrum?
+Спринты
+Планирование спринтов
+Agile-собрания
+Бэклоги продуктов
+Обзоры итогов спринтов
+Стендапы
+Scrum-мастер
+Ретроспективы agile
+Scrum для распределенных команд
+Роли в Scrum
+Scrum of scrums
+Agile-артефакты в Scrum
+Показатели Scrum
+Scrum в Jira и Confluence
+Сравнение Agile и Scrum
+Уточнение бэклога
+Scrum-мастер и менеджер проекта
