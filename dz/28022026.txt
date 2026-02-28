@@ -1,0 +1,21 @@
+https://www.atlassian.com/ru/agile/kanban/kanban-vs-scrum
+Прочесть (рассказать в чем различие scrumm и canban).
+
+Подготовиться к контрольной 07,02,2026 по темам:
+- строчные и блочные элементы html
+- навигация (ссылки)
+- html формы
+- заголовок
+- параграф с текстом
+- изображение
+- перенос строки
+- доставка стилей css в HTML документ
+
+css свойства:
+- display
+- внутренние и внешние отступы
+- размер, толщина, цвет шрифта
+- цвет фона
+
+https://developer.mozilla.org/ru/docs/Web/HTML/Reference/Elements
+https://developer.mozilla.org/ru/docs/conflicting/Learn_web_development/Core/Styling_basics

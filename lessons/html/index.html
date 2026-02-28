@@ -4,16 +4,71 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Это главная страница</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            nav a{
+                margin-right: 10px;
+                font-size: 18px;
+                font-weight: 800;
+                color: black;
+            }
+            footer{
+                background-color: aquamarine;
+                padding: 15px 0;
+                display: flex;
+                justify-content: space-evenly;
+                
+
+            }
+            footer a{
+                font-size: 1.5rem;
+
+            }
+            #ftr{
+                margin-top: 50px;
+            }
+        </style>
     </head>
     <body>
-        <nav>
-            <a href="about.html">Ссылка о нас</a>
+        <nav style="background-color: aqua; width: 100%; padding: 15px; margin-bottom: 40px;">
+            <strong>
+                <a href="#ftr" style="margin-right: 10px;">Якорь на подвал</a>
+            </strong>
+            <a href="about.html" target="_blank">Ссылка о нас</a>
             <a href="category/cat.html">На категорию</a>
             <a href="../test/in.html">Ссылка на уровень выше</a>
             <a href="https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax">Абсолютный на внешний ресурс</a>
         </nav>
         <h1>Это Index</h1>
         <h2>Это заголовок второго порядка</h2>
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" placeholder="гугл поиск">
+            <input type="text" name="user_name" minlength="2">
+            <input type="number" name="age" min="18">
+            <input type="email">
+            <input type="password" name="pass">
+            <input type="color" value="#EE1111">
+            <p>
+                <label for="">Соглашение с правилами</label>
+                <input type="checkbox" checked required>
+            </p>
+            <p>
+                <label for="">Выбор радио станции 1</label>
+                <input type="radio" name="radio">
+            </p>
+            <p>
+                <label for="">Выбор радио станции 2</label>
+                <input type="radio" name="radio" checked>
+            </p>
+            <p>
+                <label for="">Выбор радио станции 3</label>
+                <input type="radio" name="radio">
+            </p>
+            <p>
+                <input type="file">
+            </p>
+            <input type="submit">
+        </form>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
             <br>Cupiditate incidunt nesciunt ad est, perferendis,
             alias dolorem repellendus illum reprehenderit nostrum molestiae nobis,
@@ -21,5 +76,10 @@
         </p>
         <img src="ava.png" alt="">
         
+        <footer id="ftr">
+           <a href="about.html">Ссылка о нас</a>
+            <a href="category/cat.html">На категорию</a>
+            <a href="../test/in.html">Ссылка на уровень выше</a>
+        </footer>
     </body>
 </html>
