@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{display: flex; gap: 15px; max-width: 600px;
+        margin-left: auto; margin-right: auto;}
+        div p{
+            display: inline-block;
+            width: 30%;
+            margin-right: 15px;
+        }
+        p{
+            background-color: #678;
+            padding: 10px;
+        }
+        @media screen and (max-width:320px) {
+            p{width: 100%!important;}
+            section{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Про строчные и блочные</p>
+    <p>Про строчные и блочные</p>
+    <span style="display: block;">span строчный элемент</span>
+    <span>span строчный элемент</span>
+    <span>span строчный элемент</span>
+    <hr>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, optio odio quasi quos ratione veritatis repellendus? Facilis, placeat explicabo id soluta molestias reiciendis quibusdam amet veniam dignissimos qui quis voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, optio odio quasi quos ratione veritatis repellendus? Facilis, placeat explicabo id soluta molestias reiciendis quibusdam amet veniam dignissimos qui quis voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, optio odio quasi quos ratione veritatis repellendus? Facilis, placeat explicabo id soluta molestias reiciendis quibusdam amet veniam dignissimos qui quis voluptatibus.</p>
+    </section>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus explicabo, temporibus incidunt magnam fuga quos asperiores dolore, sequi nemo laudantium, quae tempore. Architecto expedita nemo facere, officiis consequatur dolorem explicabo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus explicabo, temporibus incidunt magnam fuga quos asperiores dolore, sequi nemo laudantium, quae tempore. Architecto expedita nemo facere, officiis consequatur dolorem explicabo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus explicabo, temporibus incidunt magnam fuga quos asperiores dolore, sequi nemo laudantium, quae tempore. Architecto expedita nemo facere, officiis consequatur dolorem explicabo.</p>
+    </div>
+</body>
+</html>
