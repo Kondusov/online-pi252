@@ -1,0 +1,12 @@
+let arr1 = [1,2,3,4,5];
+console.log(arr1[0]);
+console.log(arr1[0] = 'первый');
+arr1.push(6);
+console.log(arr1);
+console.log(arr1[arr1.length] = 7);
+console.log(arr1);
+arr1.unshift('первее первого');
+console.log(arr1);
+arr1.shift();
+arr1.pop();
+console.log(arr1);
