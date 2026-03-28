@@ -1,0 +1,5 @@
+Здесь можно почитать о событиях https://developer.mozilla.org/ru/docs/Web/API/Document_Object_Model/Events
+
+Сверстайте HTML форму, подключите javaScript к HTML странице.
+Следите за событием отправки формы, получайте данные из формы и
+выводите их на страницу.

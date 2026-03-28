@@ -40,11 +40,13 @@
             <a href="https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax">Абсолютный на внешний ресурс</a>
         </nav>
         <h1>Это Index</h1>
-        <h2>Это заголовок второго порядка</h2>
+        <h2 id="dinamicText" name="h2">Это заголовок второго порядка</h2>
+        <h2 id="dinamicText" name="h2">Это заголовок второго порядка</h2>
+        <h2 id="dinamicText" name="h2">Это заголовок второго порядка</h2>
         <form action="https://www.google.com/search" method="get">
-            <input type="text" name="q" placeholder="гугл поиск">
+            <input id="q" type="text" name="q" placeholder="гугл поиск">
             <input type="text" name="user_name" minlength="2">
-            <input type="number" name="age" min="18">
+            <input id="age" type="number" name="age" min="18">
             <input type="email">
             <input type="password" name="pass">
             <input type="color" value="#EE1111">
@@ -69,6 +71,7 @@
             </p>
             <input type="submit">
         </form>
+        <button onclick="getDataForm();" >SendForm</button>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
             <br>Cupiditate incidunt nesciunt ad est, perferendis,
             alias dolorem repellendus illum reprehenderit nostrum molestiae nobis,
@@ -81,5 +84,8 @@
             <a href="category/cat.html">На категорию</a>
             <a href="../test/in.html">Ссылка на уровень выше</a>
         </footer>
+        <!-- <script src="../js/getSetElements.js"></script> -->
+        <script src="../js/events.js"></script>
+        <!-- <script src="../js/getCity.js"></script> -->
     </body>
 </html>
