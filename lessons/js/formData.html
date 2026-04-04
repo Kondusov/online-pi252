@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Получение данных из формы</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="user_name" required>
+        <input type="number" id="user_age">
+        <input type="submit">
+    </form>
+    <div id="result_block"></div>
+<script>
+    let user_form = document.querySelector('form');
+    let result_block = document.getElementById('result_block');
+    user_form.addEventListener('submit', (event)=>{
+        event.preventDefault();
+        let user_name = document.getElementById('user_name').value;
+        let user_age = document.getElementById('user_age').value;
+        console.log(user_age, user_name);
+        // result_block.innerHTML += '<p>'+ user_name+' '+user_age + '</p>';
+        if(user_name&&user_age){
+            result_block.innerHTML += `<p>Имя: ${user_name} / Возраст: ${user_age}</p>`;
+        }else{
+            result_block.innerHTML += `<p>Введите данные</p>`;
+        }
+        user_form.reset();
+    });
+</script>
+</body>
+</html>
