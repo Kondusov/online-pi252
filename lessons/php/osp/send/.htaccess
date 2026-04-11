@@ -1,0 +1,9 @@
+#Deny from all
+#Options -Indexes
+#DirectoryIndex index.html
+<Files index.php>
+AuthName "Access Denied"
+AuthType Basic
+AuthUserFile .htpasswd
+require valid-user
+</Files>
