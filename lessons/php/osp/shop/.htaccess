@@ -1,0 +1,4 @@
+Options -Indexes
+DirectoryIndex      index.html index.php
+#Deny from all
+Redirect 301 /index.html /index.php
