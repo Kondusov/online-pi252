@@ -5,6 +5,9 @@ require_once 'db.php';
 // Получаем все товары
 $stmt = $pdo->query("SELECT * FROM products ORDER BY id DESC");
 $products = $stmt->fetchAll();
+// var_dump($_COOKIE);
+// var_dump($_SESSION);
+//die(); 189armjm5mmfare0g8eomeqjmnvbumqq
 ?>
 
 <!DOCTYPE html>
