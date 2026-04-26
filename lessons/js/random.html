@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рандомайзер</title>
+</head>
+<body>
+     <!-- Напишите рандомайзер.Принимайте из HTML формы диапазон поиска,
+вычисляйте рандомное число в этом диапазоне и выводите на страницу.
+Нужно исключить повторения. -->
+    <div>
+        <form action="">
+            <label for="min">Начальное значение:</label>
+            <input type="number" id="min"> 
+            <label for="max">Конечное значение:</label>
+            <input type="number" id="max"> 
+            <input type="submit">
+        </form>
+    </div>
+    <p id="result">Результат...</p>
+<script>
+    let usedNum = [];
+    function genRandom() {
+            let rand;
+            let min = document.getElementById('min').value * 1;
+            let max = document.getElementById('max').value * 1;
+            let maxUsedNum = max-min+1;
+            if(maxUsedNum == usedNum.length){
+                usedNum =[];
+                return document.getElementById('result').innerHTML = 'Все варианты перебраны';
+            }
+            do{
+                rand = Math.floor(Math.random() * (max - min + 1)) + min;
+                console.log(rand);
+            }
+            while(usedNum.includes(rand));
+            usedNum.push(rand);
+            document.getElementById('result').innerHTML += '<p>'+rand+'</p>';
+            console.log(usedNum);
+        }
+    let form = document.querySelector('form');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        genRandom();
+    });    
+</script>
+</html>
